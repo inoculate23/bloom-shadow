@@ -65,12 +65,12 @@ async function start() {
     }
   })
   encoder.configure({
-    codec: 'avc1.4D0032',
+    codec: 'avc1.64002A',
     framerate: 30,
     // 码率
     bitrate: 4e6,
-    width: 1280,
-    height: 720,
+    width: 1920,
+    height: 1080,
     latencyMode: 'quality',
     alpha: 'discard',
     avc: { format: 'avc' }
