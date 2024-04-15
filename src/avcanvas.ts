@@ -32,8 +32,8 @@ function init(container: HTMLElement) {
   avCanvas = new AVCanvas(container, {
     bgColor: '#333',
     resolution: {
-      width: 1280,
-      height: 720
+      width: 1920,
+      height: 1080
     }
   })
 
