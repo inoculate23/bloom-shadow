@@ -14,11 +14,11 @@ function App() {
             <AddResource></AddResource>
           </div>
           <div className="sprite-list flex-1">
-            <div className="font-bold">素材列表</div>
+            <div className="font-bold">Capture</div>
             <ResourceList></ResourceList>
           </div>
           <div className="tpl-list flex-1">
-            <div className="font-bold">模板列表</div>
+            <div className="font-bold">sound</div>
             <div>开发中</div>
           </div>
         </div>
@@ -34,14 +34,14 @@ function App() {
           className="text-blue-400"
           href="https://github.com/hughfenghen/bloom-shadow"
         >
-          Bloom Shadow
+         Webcodec recorder
         </a>{' '}
         Powerd by{' '}
         <a
           className="text-blue-400"
-          href="https://github.com/hughfenghen/WebAV"
+          href="https://haawkeneuraltech.com/"
         >
-          WebAV
+         Haawke Neural Technology
         </a>
       </footer>
     </div>
