@@ -66,9 +66,9 @@ async function start() {
   })
   encoder.configure({
     codec: 'avc1.64002A',
-    framerate: 30,
+    framerate: 60,
     // 码率
-    bitrate: 4e6,
+    bitrate: 5e6,
     width: 1920,
     height: 1080,
     latencyMode: 'quality',
@@ -148,7 +148,7 @@ class VideoFrameTransformer {
     frame.close()
     return {
       vf,
-      opts: { keyFrame: this.#frameCnt % 30 === 0 }
+      opts: { keyFrame: this.#frameCnt % 60 === 0 }
     }
   }
 }
