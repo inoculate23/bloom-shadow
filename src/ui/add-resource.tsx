@@ -60,11 +60,11 @@ export function AddResource() {
             });
             await avCvs.spriteManager.addSprite(vs);
             // 默认右下角
-            const margin = 1280 * 0.015;
+            const margin = 1920 * 0.015;
             vs.rect.w = 450;
             vs.rect.h = 300;
-            vs.rect.x = 1280 - vs.rect.w - margin;
-            vs.rect.y = 720 - vs.rect.h - margin;
+            vs.rect.x = 1920 - vs.rect.w - margin;
+            vs.rect.y = 1080 - vs.rect.h - margin;
             setResList(resList.concat(vs));
           }}
         >
