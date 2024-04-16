@@ -25,16 +25,16 @@ export function AddResource() {
             // 自适应全屏
             const { w, h } = vs.rect;
             const ratio = w / h;
-            if (ratio > 1280 / 720) {
+            if (ratio > 1920 / 1080) {
               vs.rect.x = 0;
-              vs.rect.w = 1280;
+              vs.rect.w = 1920;
               vs.rect.h = vs.rect.w / ratio;
-              vs.rect.y = (720 - vs.rect.h) / 2;
+              vs.rect.y = (1080 - vs.rect.h) / 2;
             } else {
               vs.rect.y = 0;
-              vs.rect.h = 720;
+              vs.rect.h = 1080;
               vs.rect.w = vs.rect.h * ratio;
-              vs.rect.x = (1280 - vs.rect.w) / 2;
+              vs.rect.x = (1920 - vs.rect.w) / 2;
             }
             setResList(resList.concat(vs));
           }}
@@ -46,8 +46,8 @@ export function AddResource() {
           onClick={async () => {
             const mediaStream = await navigator.mediaDevices.getUserMedia({
               video: {
-                width: 900,
-                height: 600,
+                width: 1920,
+                height: 1080,
               },
               audio: true,
             });
